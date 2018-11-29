@@ -5,8 +5,52 @@
 
 * {
   box-sizing: border-box;
+  background: #0f0449;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+// Navbar // 
+
+.top-logo {
+  display: inline-block;
+  float:left;
+  color:white;
+  padding:1rem;
+  font-size:18px;
+}
+
+.top-menu {
+  display: inline-block;
+  float: right;
+
+  ul {
+    text-decoration: none;
+    padding:1rem;
+  }
+  li {
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+  } 
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding:10px 20px;
+    margin: 0px 10px;
+    &:hover {
+      background:#304ffe;
+    }
+  }
+
+  .login {
+    border-radius: 4px;
+    border: .8px solid #304ffe;
+  }
+  
+}
+
+
+// Navbar end // 

@@ -4,10 +4,25 @@ import '../../App.scss';
 // import { Link } from 'react-router-dom';
 const Navbar = () => {
 	return (
-		<nav style={{textAlign:'center'}}>
-		<img src={logo} style={{height:'40px', widht:'40px;'}} className="App-logo" alt="logo" />
-		<h4>Nav</h4>
-		</nav>
+		<React.Fragment>
+		<div className="container">
+			<header>
+				<div className="top-logo">
+					Cryptodate
+				</div>
+				<nav className="top-menu">
+					<ul>
+						<li>
+							<a className="login" href="">Login</a>
+						</li>
+						<li>
+							<a className="register" href="">Register</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		</React.Fragment>
 	);
 };
 
