@@ -2,17 +2,17 @@
 @import "reset";
 @import "variables";
 @import "grid";
+@import "datepr";
 @import "index";
 @import "result";
 
 * {
   box-sizing: border-box;
-  background: #0f0449;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: white;
+  background: #0f0449;
 }
 
 // Navbar // 

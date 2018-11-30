@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
+import DatePicker from 'react-datepicker'
 import './img/bitcoin.png'
 
 const Index = () => {
@@ -18,9 +19,9 @@ const Index = () => {
 						<input type="text" name="amount"></input>
 
 						<label> Date </label>
-						<input type="text" name="date"></input>
+						<DatePicker />
 						<Link to={`result`} >
-						<button type="submit">
+						<button type="submit" className="check-btn">
               				Check Profits
             			</button>
 						</Link>
