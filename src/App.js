@@ -5,7 +5,7 @@ import './sass/main.scss'
 
 import Navbar from './components/layout/Navbar';
 import Index from './components/layout/Index';
-
+import Result from './components/result/Result';
 
 class App extends Component {
   render() {
@@ -16,6 +16,7 @@ class App extends Component {
 						<div className="container">
 							<Switch>
 								<Route exact path="/" component={Index} />
+								<Route exact path="/result" component={Result} />
 							</Switch>
 						</div>
 					</React.Fragment>

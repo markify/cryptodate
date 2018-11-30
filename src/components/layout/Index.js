@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 import './img/bitcoin.png'
 
 const Index = () => {
@@ -18,10 +19,11 @@ const Index = () => {
 
 						<label> Date </label>
 						<input type="text" name="date"></input>
-		
+						<Link to={`result`} >
 						<button type="submit">
               				Check Profits
             			</button>
+						</Link>
 					</div>
 				</div>
 			</section>
