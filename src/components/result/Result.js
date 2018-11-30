@@ -8,19 +8,25 @@ class Result extends Component {
         <section id='results'>
             <div className="container">
             <div className="col-md-12">
-                Ads
+                <div className="ads">
+
+                </div>
             </div>
             <div className="col-md-12">
-                <h4>Your investment is now </h4>            
-                <a href="#">
+                <h2>Your dollar investment is now </h2>
+                <h1> Your net profit % percent </h1>
+                <h4> Your net lost</h4>
+                <a href="#" className="result-btn active">
                 Create account to keep track of all your records
                 </a>
-                <a href="#">
-                Or Check Another Transaction
+                <a href="#" className="result-btn">
+                Check Another Transaction
                 </a>
             </div>
             <div className="col-md-12">
-                Ads
+                <div className="ads">
+
+                </div>
             </div>
             </div>
         </section>
