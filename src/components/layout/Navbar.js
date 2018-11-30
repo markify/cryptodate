@@ -21,6 +21,9 @@ const Navbar = () => {
 						<li>
 							<a className="register" href="">Register</a>
 						</li>
+						<li>
+							<a className="events" href="">Events</a>
+						</li>
 					</ul>
 				</nav>
 			</header>
