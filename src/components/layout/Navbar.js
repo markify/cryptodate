@@ -6,7 +6,7 @@ const Navbar = () => {
 	return (
 		<React.Fragment>
 		<div className="container">
-			<header>
+			<header className="top-nav">
 				<div className="top-logo">
 					Cryptodate
 				</div>
