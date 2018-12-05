@@ -19,7 +19,7 @@ class Index extends Component {
 						<h2> Enter transactions </h2>
 
 						<label> Price </label>
-						<input type="text" name="amount" value={this.props.globalState.price}  onChange={this.props.onInputChange} ></input>
+						<input type="text" autoFocus={true} pattern="[0-9]*" name="amount" value={this.props.globalState.price}  onChange={this.props.onInputChange} ></input>
 
 						<label> Date </label>
 						<DatePicker
@@ -27,8 +27,8 @@ class Index extends Component {
 						onChange={this.props.handleChange}
 						peekNextMonth
 						showMonthDropdown
-						showYearDropdown
-						dropdownMode="select"
+            dropdownMode="select"
+            maxDate={new Date()}
 						/>
 					<Link to={`result`} >
 						<button type="submit" className="check-btn" onClick={this.props.checkProfits}>

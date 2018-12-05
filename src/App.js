@@ -31,7 +31,7 @@ class App extends Component {
 		}
 
 	  onInputChange(event){
-		this.setState({ price: event.target.value });
+		  this.setState({ price: event.target.value });
 		}
 		
 		componentWillMount() {
