@@ -1,0 +1,40 @@
+#coins {
+  margin-top:40px;
+}
+#coins .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.box {
+  border-radius: 4px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  column-gap: 20px;
+  background: white;
+  height: 25vh;
+  -webkit-box-shadow: 0 0 8px -2px rgba(0,0,0,.4);
+  box-shadow: 0 0 8px -2px rgba(0,0,0,.4);
+}
+.coinrank {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin: 0 20px;
+  padding: 0 3rem;
+  min-height: 10rem;
+  max-width: 140rem;
+}
+.coinrank .card {
+
+  padding: 2rem;
+  width: 10%;
+  font-size: 1.2rem;
+  margin: 0 20px;
+}

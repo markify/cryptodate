@@ -21,7 +21,9 @@ const Navbar = () => {
 							<a className="register" href="/">Register</a>
 						</li>
 						<li>
-							<a className="events" href="/">Events</a>
+              <Link to="/coins" >
+							<a>Coins</a>
+              </Link>
 						</li>
 					</ul>
 				</nav>

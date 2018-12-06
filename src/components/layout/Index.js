@@ -32,8 +32,8 @@ class Index extends Component {
 						/>
 					<Link to={`result`} >
 						<button type="submit" className="check-btn" onClick={this.props.checkProfits}>
-						Check Profits
-            		</button>
+						Check profits
+            </button>
 					</Link>
 					</div>
 				</div>

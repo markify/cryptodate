@@ -6,6 +6,7 @@ import './sass/main.scss'
 import Navbar from './components/layout/Navbar';
 import Index from './components/layout/Index';
 import Result from './components/result/Result';
+import Coins from './components/coins/Coins';
 
 class App extends Component {
 	constructor(props) {
@@ -36,7 +37,7 @@ class App extends Component {
 		
 		componentWillMount() {
 			var self = this;
-			axios.get(`https://min-api.cryptocompare.com/data/pricehistorical?fsym=BTC&tsyms=BTC,USD,EUR&ts=${this.state.btc}&extraParams=crypto_profits_cp`)
+			axios.get(`https://min-api.cryptocompare.com/data/pricehistorical?fsym=BTC&tsyms=BTC,USD,EUR&ts=${this.state.btc}`)
 				.then(function (response) {
 					self.setState({
 						btcToday: response.data.BTC
@@ -51,7 +52,7 @@ class App extends Component {
 
 		checkProfits(){
 			var self = this;
-			axios.get(`https://min-api.cryptocompare.com/data/pricehistorical?fsym=BTC&tsyms=BTC,USD,EUR&ts=${Math.floor(this.state.startDate/1000) }&extraParams=crypto_profits_cp`)
+			axios.get(`https://min-api.cryptocompare.com/data/pricehistorical?fsym=BTC&tsyms=BTC,USD,EUR&ts=${Math.floor(this.state.startDate/1000) }`)
 				.then(function (response) {
 					self.setState({
 						data: response.data.BTC
@@ -112,6 +113,7 @@ class App extends Component {
             <Switch>		
               <Route exact path="/" component={ () => <Index handleChange={this.handleChange} globalState={this.state} onInputChange={this.onInputChange} checkProfits={this.checkProfits}/>} />
               <Route exact path="/result" component={ () => <Result globalState={this.state} />} />
+              <Route exact path="/coins" component={Coins} />
             </Switch>
           </div>
         </React.Fragment>
