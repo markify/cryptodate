@@ -1,6 +1,7 @@
 import React, { Component} from 'react'
 import axios from 'axios'
 import moment from 'moment'
+import Footer from '../layout/Footer';
 class Coins extends Component {
   
   state = {
@@ -46,7 +47,7 @@ class Coins extends Component {
                 <div style={{borderTop: '1px solid #e1e5ea', clear: 'both'}}>
                   <div style={{textAlign: 'center', float: 'left', width: '33.3%', fontSize: 12, padding: '12px 0 16px 0', lineHeight: '1.25em'}}>                        
                     <h4>Price </h4>                   
-                      <span style={{fontSize: '14px', color:'green', fontWeight:'700'}}> {crypto[key].quotes["USD"].price.toFixed(2)}
+                      <span style={{fontSize: '14px', color:'green', fontWeight:'700'}}> {crypto[key].quotes["USD"].price.toFixed(3)}
                         <span style={{fontSize: '9px'}}> USD</span>
                       </span>
                   </div>
@@ -84,6 +85,7 @@ class Coins extends Component {
             }
           </div>
 			</section>
+      <Footer/>
 		</React.Fragment>
     )
   }

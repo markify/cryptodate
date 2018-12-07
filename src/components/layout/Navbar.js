@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../App.scss';
+import cryptodate from './img/cryptodatenet.png'
+
 // import { Link } from 'react-router-dom';
 const Navbar = () => {
 	return (
@@ -9,7 +11,7 @@ const Navbar = () => {
 			<header className="top-nav">
 				<Link to="/">
 				<div className="top-logo">
-					Cryptodate
+          <img src={cryptodate} alt="crypto logo" />
 				</div>
 				</Link>
 				<nav className="top-menu">

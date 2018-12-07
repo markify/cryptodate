@@ -2,7 +2,7 @@ import React, { Component }  from 'react';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import DatePicker from 'react-datepicker'
-import './img/bitcoin.png'
+import bitcoin from'./img/bitcoin.png';
 
 
 class Index extends Component {
@@ -13,7 +13,7 @@ class Index extends Component {
 			<section id="index">
 				<div className="container">
 					<div className="col-md-6">
-						<img src="/img/bitcoin.png" className="btc-logo" alt="coin logo" />
+						<img src={bitcoin} className="btc-logo" alt="coin logo" />
 					</div>
 					<div className="col-md-6">
 						<h2> Enter transactions </h2>
