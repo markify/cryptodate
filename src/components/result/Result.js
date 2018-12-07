@@ -31,7 +31,7 @@ class Result extends Component {
               <h2>Your ${dnewPrice} dollar investment is now </h2>
               <h1> ${cnewPrice} </h1>
               <h4> {this.checkGains()}</h4>
-              <a href="/" className="result-btn active"> Create account to keep track of all your records </a>
+              <a href="/" className="result-btn active"> Login with google to keep track of all your records </a>
               <a href="/" className="result-btn"> Check Another Transaction </a>
             </div>
             <div className="col-md-12">

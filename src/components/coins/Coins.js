@@ -1,5 +1,6 @@
 import React, { Component} from 'react'
 import axios from 'axios'
+import moment from 'moment'
 class Coins extends Component {
   
   state = {
@@ -33,8 +34,8 @@ class Coins extends Component {
                     <span style={{fontSize: '18px'}}>
                       <a href={'https://coinmarketcap.com/currencies/'+ crypto[key].name } target="_blank" style={{textDecoration: 'none', color: 'rgb(16, 112, 224)', fontSize:'100%'}}>
                       {crypto[key].name} ({crypto[key].symbol})</a>
-                      <br></br>
-                      {crypto[key].last_updated}
+                      <br></br>   
+                       <strong style={{fontSize:'0.7rem'}}>Last updated: {moment.unix(crypto[key].last_updated).format("MM.DD.YYYY")}</strong>
                     </span>
                  
                   </div>
