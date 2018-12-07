@@ -18,9 +18,6 @@ const Navbar = () => {
 							<a className="login" href="/">Login</a>
 						</li>
 						<li>
-							<a className="register" href="/">Register</a>
-						</li>
-						<li>
               <Link to="/coins" >
 							<a>Coins</a>
               </Link>

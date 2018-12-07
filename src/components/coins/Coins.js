@@ -20,6 +20,7 @@ class Coins extends Component {
     const { crypto, data} = this.state;
     console.log(crypto);
     //<img src={'https://s2.coinmarketcap.com/static/img/coins/32x32/'+  data[key].id + '.png'} />
+    
     return (
       <React.Fragment>
 			<section id="coins">
@@ -50,13 +51,31 @@ class Coins extends Component {
                   </div>
                   <div style={{textAlign: 'center', float: 'left', width: '33.3%', fontSize: 12, padding: '12px 0 16px 0',  lineHeight: '1.25em'}}>                        
                     <h4>Change (24h) </h4>                    
-                    <span style={{fontSize: '14px'}}>{crypto[key].quotes["USD"].percent_change_24h}
-                    </span>
+                    {(() => {
+                    if (crypto[key].quotes["USD"].percent_change_24h > 0) {
+                      return (
+                        <div style={{color:'green'}}>{crypto[key].quotes["USD"].percent_change_24h}%</div>
+                      )
+                    }  else {
+                      return (
+                        <div style={{color:'red'}}>{crypto[key].quotes["USD"].percent_change_24h}%</div>
+                      )
+                    }
+                  })()}
                   </div>
                   <div style={{textAlign: 'center', float: 'left', width: '33.3%', fontSize: 12, padding: '12px 0 16px 0',  lineHeight: '1.25em'}}>                        
                     <h4>Change (7d) </h4>                    
-                    <span style={{fontSize: '14px'}}>{crypto[key].quotes["USD"].percent_change_7d}
-                    </span>
+                    {(() => {
+                    if (crypto[key].quotes["USD"].percent_change_7d > 0) {
+                      return (
+                        <div style={{color:'green'}}>{crypto[key].quotes["USD"].percent_change_7d}%</div>
+                      )
+                    }  else {
+                      return (
+                        <div style={{color:'red'}}>{crypto[key].quotes["USD"].percent_change_7d}%</div>
+                      )
+                    }
+                  })()}
                   </div>
                 </div>
               </div>           
