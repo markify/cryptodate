@@ -1,40 +1,29 @@
 #coins {
   margin-top:40px;
 }
-#coins .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  column-gap: 20px;
-}
-
-.box {
-  border-radius: 4px;
-  display:flex;
-  flex-direction:row;
-  justify-content: space-around;
-  column-gap: 20px;
-  background: white;
-  height: 25vh;
-  -webkit-box-shadow: 0 0 8px -2px rgba(0,0,0,.4);
-  box-shadow: 0 0 8px -2px rgba(0,0,0,.4);
+.title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight:700;
+  margin:20px;
+  text-align: center;
 }
 .coinrank {
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 auto;
-  margin: 0 20px;
-  padding: 0 3rem;
-  min-height: 10rem;
-  max-width: 140rem;
 }
-.coinrank .card {
-
-  padding: 2rem;
-  width: 10%;
-  font-size: 1.2rem;
-  margin: 0 20px;
+.box {
+  flex: 1;
+  flex-basis: 20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #fff; 
+  margin: 1em; 
+  padding: 0 0;
+  border-radius: 10px;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  min-width: 210px;
 }
