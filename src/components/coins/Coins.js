@@ -1,9 +1,7 @@
 import React, { Component} from 'react'
 import axios from 'axios'
 import moment from 'moment'
-import Footer from '../layout/Footer';
 class Coins extends Component {
-  
   state = {
     crypto: {},
   };
@@ -85,7 +83,6 @@ class Coins extends Component {
             }
           </div>
 			</section>
-      <Footer/>
 		</React.Fragment>
     )
   }

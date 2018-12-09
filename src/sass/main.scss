@@ -7,10 +7,13 @@
 @import "result";
 @import "coins";
 @import "footer";
+@import "navMain";
 
 * {
   box-sizing: border-box;
+  //find overflow-x border: 1px solid #f00 !important;
 }
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -27,7 +30,7 @@ body {
   display: inline-block;
   float:left;
   color:white;
-  padding:1rem;
+  padding:0.3rem;
   font-size:18px;
 }
 
@@ -62,5 +65,24 @@ body {
   
 }
 
+// Media Queries - Top Menu //
 
-// Navbar end // 
+  @media only screen and (max-width: 768px) {
+  .top-menu {
+    display:none;
+  }
+
+  .res-menu {
+    display: block;
+  }
+
+}
+
+  @media only screen and (min-width: 769px) {
+    .top-menu {
+      display: block;
+  }
+    .res-menu {
+      display: none;
+    }
+}

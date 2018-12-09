@@ -5,6 +5,7 @@ import './sass/main.scss'
 
 import Navbar from './components/layout/Navbar';
 import Index from './components/layout/Index';
+import Footer from './components/layout/Footer';
 import Result from './components/result/Result';
 import Coins from './components/coins/Coins';
 
@@ -116,6 +117,7 @@ class App extends Component {
               <Route exact path="/coins" component={Coins} />
             </Switch>
           </div>
+          <Footer/>
         </React.Fragment>
 			</Router>
     );

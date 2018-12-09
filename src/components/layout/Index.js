@@ -38,7 +38,6 @@ class Index extends Component {
 					</div>
 				</div>
 			</section>
-			<Footer/>
 		</React.Fragment>
 		);
 	} 	

@@ -1,0 +1,96 @@
+.res-menu .menu {
+  position: absolute;
+  right: 24px;
+  top: -97px;
+  z-index: 98;
+  width: 90px;
+  height: 170px;
+  background:#1E283A;
+  cursor: pointer;
+}
+
+//hamburger color
+.res-menu .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: #FFF;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+}
+.res-menu .hamburger:hover {
+  opacity: .8;
+}
+
+.res-menu .hamburger:after, .res-menu .hamburger:before {
+  content: '';
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+}
+
+//hamburger shapes
+.res-menu .hamburger:before {
+  top: -10px;
+}
+.res-menu .hamburger:after {
+  bottom: -10px;
+}
+.res-menu input {
+  display: none;
+}
+
+// inside nav color inside size
+.res-menu input:checked + .menu {
+  -webkit-box-shadow: 0 0 0 1000vh #1E283A;
+  box-shadow: 0 0 0 1000vh #1E283A;
+}
+
+//hamburger animations
+.res-menu input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.res-menu input:checked + .menu .hamburger:after {
+  bottom: 0;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.res-menu input:checked + .menu .hamburger:before {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.res-menu input:checked + .menu + ul {
+  opacity: 1;
+}
+
+//hamburger menu text
+.res-menu ul {
+  z-index: 198;
+  position: absolute;
+  top: 12%;
+  left: 10%;
+  opacity: 0;
+  font-size:700;
+  font-size:1.2rem;
+}
+
+.res-menu a:hover{
+  opacity: .7;
+}
+
+.res-menu a {
+  margin-bottom: 2em;
+  text-decoration: none;
+  display: block;
+}

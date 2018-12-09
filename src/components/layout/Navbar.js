@@ -14,6 +14,30 @@ const Navbar = () => {
           <img src={cryptodate} alt="crypto logo" />
 				</div>
 				</Link>
+        <label className="res-menu">
+        <input type="checkbox"></input>
+        <span className="menu">
+          <span className="hamburger">
+          </span>
+        </span>
+        <ul>
+          <li>
+            <Link to="/"> 
+            <a style={{color:'white'}}>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link to="/coins"> 
+            <a style={{color:'white'}}>Coins</a>
+            </Link>
+          </li>
+          <li>
+            <Link to="/"> 
+            <a style={{color:'white'}}>Login</a>
+            </Link>
+          </li>
+        </ul>
+        </label>
 				<nav className="top-menu">
 					<ul>
 						<li>
