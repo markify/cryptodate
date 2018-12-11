@@ -11,7 +11,7 @@ class Loader extends React.Component {
 
   render() {
     return (
-      <div className='sweet-loading' style={{textAlign:'center'}}>
+      <div className='sweet-loading' style={{textAlign:'center',marginBottom:'400px'}}>
         <ClipLoader
           sizeUnit={"px"}
           size={70}

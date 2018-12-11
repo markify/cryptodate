@@ -7,6 +7,7 @@ import bitcoin from'./img/bitcoin.png';
 
 class Index extends Component {
 // event.target.value for input
+
 	render() {
 		return (
 		<React.Fragment>

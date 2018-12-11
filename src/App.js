@@ -8,6 +8,7 @@ import Index from './components/layout/Index';
 import Footer from './components/layout/Footer';
 import Error404 from './components/error404/Error404';
 import Result from './components/result/Result';
+import Login from './components/login/Login';
 import Coins from './components/coins/Coins';
 
 class App extends Component {
@@ -116,6 +117,7 @@ class App extends Component {
               <Route exact path="/" component={ () => <Index handleChange={this.handleChange} globalState={this.state} onInputChange={this.onInputChange} checkProfits={this.checkProfits}/>} />
               <Route exact path="/result" component={ () => <Result globalState={this.state} />} />
               <Route exact path="/coins" component={Coins} />
+              <Route exact path="/login" component={Login} />
               <Route component={Error404} exact />
             </Switch>
           </div>

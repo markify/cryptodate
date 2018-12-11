@@ -27,10 +27,10 @@ class Coins extends Component {
     return (
       <React.Fragment>
 			<section id="coins"  style={{transition:'all 2s ease-in-out'}}>
-        <div class="title"> Crypto Coins </div>
+        <div className="title"> Crypto Coins </div>
           <div className="coinrank">
             { Object.keys(crypto).map( (key)=> {
-              return <div className="col-md-3 box">
+              return <div  key={crypto[key].id} className="col-md-3 box">
                 <div>
                   <div style={{float: 'right', width: '65%', border: 'none', textAlign: 'center',  marginTop:'10px', lineHeight: '35px'}}>
                     <span style={{fontSize: '18px'}}>
