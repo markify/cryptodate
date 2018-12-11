@@ -1,6 +1,7 @@
 import React, { Component} from 'react'
 import axios from 'axios'
 import moment from 'moment'
+import Loader from '../layout/Loader';
 class Coins extends Component {
   state = {
     crypto: {},
@@ -18,12 +19,14 @@ class Coins extends Component {
 
   render () {
     const { crypto, data} = this.state;
-    console.log(crypto);
+    //console.log(crypto);
     //<img src={'https://s2.coinmarketcap.com/static/img/coins/32x32/'+  data[key].id + '.png'} />
-    
+    if (crypto === undefined || Object.keys(crypto).length === 0) {
+			return <Loader/>;
+		} else {
     return (
       <React.Fragment>
-			<section id="coins">
+			<section id="coins"  style={{transition:'all 2s ease-in-out'}}>
         <div class="title"> Crypto Coins </div>
           <div className="coinrank">
             { Object.keys(crypto).map( (key)=> {
@@ -84,7 +87,8 @@ class Coins extends Component {
           </div>
 			</section>
 		</React.Fragment>
-    )
+      )
+    }
   }
 }
 export default Coins;

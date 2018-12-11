@@ -10,8 +10,8 @@ class Index extends Component {
 	render() {
 		return (
 		<React.Fragment>
-			<section id="index">
-				<div className="container">
+			<section id="index" style={{transition:'all 2s ease-in-out'}}>
+				<div className="container" style={{transition:'all 2s ease-in-out'}}>
 					<div className="col-md-6">
 						<img src={bitcoin} className="btc-logo" alt="coin logo" />
 					</div>

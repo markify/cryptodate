@@ -1,11 +1,11 @@
 .res-menu .menu {
   position: absolute;
   right: 24px;
-  top: -97px;
+  top: -100px;
   z-index: 98;
-  width: 90px;
-  height: 170px;
-  background:#1E283A;
+  width: 73px;
+  height: 100px;
+  background:transparent;
   cursor: pointer;
 }
 
@@ -15,7 +15,7 @@
   top: 135px;
   left: 50px;
   width: 30px;
-  height: 2px;
+  height: 4px;
   background: #FFF;
   display: block;
   -webkit-transform-origin: center;
@@ -50,11 +50,16 @@
 }
 
 // inside nav color inside size
-.res-menu input:checked + .menu {
+// inside nav color inside size
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + .menu{
+  display: block;
   -webkit-box-shadow: 0 0 0 1000vh #1E283A;
   box-shadow: 0 0 0 1000vh #1E283A;
 }
-
 //hamburger animations
 .res-menu input:checked + .menu .hamburger {
   -webkit-transform: rotate(45deg);
@@ -71,7 +76,7 @@
   transform: rotate(90deg);
 }
 .res-menu input:checked + .menu + ul {
-  opacity: 1;
+  display:block;
 }
 
 //hamburger menu text
@@ -80,7 +85,7 @@
   position: absolute;
   top: 12%;
   left: 10%;
-  opacity: 0;
+  display:none;
   font-size:700;
   font-size:1.2rem;
 }
@@ -94,3 +99,4 @@
   text-decoration: none;
   display: block;
 }
+

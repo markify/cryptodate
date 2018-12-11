@@ -1,5 +1,6 @@
 import React, { Component} from 'react'
-
+import Loader from '../layout/Loader';
+import { Link } from 'react-router-dom';
 class Result extends Component {
     constructor () {
         super()
@@ -18,7 +19,9 @@ class Result extends Component {
     }
   render () {
     const {dnewPrice, cnewPrice} = this.props.globalState.totalStatus
-
+    if (dnewPrice === undefined || cnewPrice === undefined) {
+			return <Loader/>;
+		}
     return (
         <section id='results'>
           <div className="container">
@@ -31,12 +34,11 @@ class Result extends Component {
               <h2>Your ${dnewPrice} dollar investment is now </h2>
               <h1> ${cnewPrice} </h1>
               <h4> {this.checkGains()}</h4>
-              <a href="/" className="result-btn active"> Login with google to keep track of all your records </a>
-              <a href="/" className="result-btn"> Check Another Transaction </a>
+              <Link to="/login"  className="result-btn active">Login with google to keep track of all your records</Link>
+              <Link to="/" className="result-btn">Check Another Transaction </Link>
             </div>
             <div className="col-md-12">
               <div className="ads">
-
               </div>
             </div>
           </div>
