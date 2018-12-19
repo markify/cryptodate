@@ -1,7 +1,5 @@
 ## Cryptodate
-
-A place to check for how much profit a user made in crypto and check for crypto event dates.
-
+check crypto coin prices and calculate profits made
 ## Features soon
  - Login with google
  - Add Event Dates or Calendar (API or user post)
